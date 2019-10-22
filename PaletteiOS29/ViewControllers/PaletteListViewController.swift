@@ -61,4 +61,39 @@ class PaletteListViewController: UIViewController {
         
         return tableView
     }()
+    
+    // MARK: - Add SubViews (Part Two)
+    
+    func addAllSubViews() {
+        self.view.addSubview(featuredButton)
+        self.view.addSubview(randomButton)
+        self.view.addSubview(doubleRainbowButton)
+        self.view.addSubview(buttonStackView)
+        self.view.addSubview(paletteTableView)
+    }
+    
+    func setUpStackView() {
+        buttonStackView.translatesAutoresizingMaskIntoConstraints = false
+        buttonStackView.addArrangedSubview(featuredButton)
+        buttonStackView.addArrangedSubview(doubleRainbowButton)
+        buttonStackView.addArrangedSubview(randomButton)
+    }
+    
+    func configureTableView() {
+        paletteTableView.delegate = self
+        paletteTableView.dataSource = self
+        paletteTableView.register(PaletteTableViewCell.self, forCellReuseIdentifier: "paletteCell")
+        paletteTableView.allowsSelection = false
+    }
+}
+
+extension PaletteListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }

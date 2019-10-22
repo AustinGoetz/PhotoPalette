@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A4F9C86235F5D8800B69A2B /* PaletteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */; };
+		2A4F9C88235F636200B69A2B /* PaletteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F9C87235F636200B69A2B /* PaletteTableViewCell.swift */; };
 		582214C8235F4FF8009A4EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582214C7235F4FF8009A4EF5 /* AppDelegate.swift */; };
 		582214CA235F4FF8009A4EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582214C9235F4FF8009A4EF5 /* SceneDelegate.swift */; };
 		582214D1235F4FFC009A4EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582214D0235F4FFC009A4EF5 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteListViewController.swift; sourceTree = "<group>"; };
+		2A4F9C87235F636200B69A2B /* PaletteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteTableViewCell.swift; sourceTree = "<group>"; };
 		582214C4235F4FF8009A4EF5 /* PaletteiOS29.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaletteiOS29.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582214C7235F4FF8009A4EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582214C9235F4FF8009A4EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4F9C89235F636900B69A2B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F9C87235F636200B69A2B /* PaletteTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		582214BB235F4FF8009A4EF5 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				582214EC235F51D6009A4EF5 /* ViewControllers */,
+				2A4F9C89235F636900B69A2B /* CustomViews */,
 				582214E9235F51A6009A4EF5 /* Extensions */,
 				582214E1235F5104009A4EF5 /* Models */,
 				582214E6235F514E009A4EF5 /* ImaggaService */,
@@ -205,6 +216,7 @@
 				582214CA235F4FF8009A4EF5 /* SceneDelegate.swift in Sources */,
 				582214EB235F51BD009A4EF5 /* UIColorExtension.swift in Sources */,
 				582214E8235F517C009A4EF5 /* ImaggaService.swift in Sources */,
+				2A4F9C88235F636200B69A2B /* PaletteTableViewCell.swift in Sources */,
 				582214DE235F50CE009A4EF5 /* UnsplashService.swift in Sources */,
 				2A4F9C86235F5D8800B69A2B /* PaletteListViewController.swift in Sources */,
 				582214E0235F50ED009A4EF5 /* UnsplashRoute.swift in Sources */,
