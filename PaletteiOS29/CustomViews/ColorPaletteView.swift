@@ -12,8 +12,13 @@ class ColorPaletteView: UIView {
     
     var colors: [UIColor] {
         didSet {
-            
+            buildColorBricks()
         }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setUpViews()
     }
     
     init(colors: [UIColor] = [], frame: CGRect = .zero) {
@@ -41,5 +46,28 @@ class ColorPaletteView: UIView {
     private func setUpViews() {
         addSubview(colorStackView)
         colorStackView.anchor(top: topAnchor, bottom: bottomAnchor, leading: leadingAnchor, trailing: trailingAnchor, topPadding: 0, bottomPadding: 0, leadingPadding: 0, trailingPadding: 0)
+//        buildColorBricks()
+    }
+    
+    private func generateColorBrick(for color: UIColor) -> UIView {
+        let colorBrick = UIView()
+        colorBrick.backgroundColor = color
+        
+        return colorBrick
+    }
+    
+    private func resetColorBricks() {
+        for subView in colorStackView.arrangedSubviews {
+            self.colorStackView.removeArrangedSubview(subView)
+        }
+    }
+    
+    private func buildColorBricks() {
+        resetColorBricks()
+        for color in self.colors {
+            let colorBrick = generateColorBrick(for: color)
+            self.addSubview(colorBrick)
+            self.colorStackView.addArrangedSubview(colorBrick)
+        }
     }
 }

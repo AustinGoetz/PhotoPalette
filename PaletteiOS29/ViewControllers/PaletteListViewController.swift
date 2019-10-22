@@ -24,9 +24,20 @@ class PaletteListViewController: UIViewController {
     }
     
     var photos: [UnsplashPhoto] = []
+    
+    override func loadView() {
+        super.loadView()
+        addAllSubViews()
+        setUpStackView()
+        constrainViews()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
+        searchForCategory(.featured)
+        activateButtons()
+        selectButton(featuredButton)
     }
     
     // MARK: - API Helper Function
@@ -156,7 +167,18 @@ extension PaletteListViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "paletteCell", for: indexPath) as! PaletteTableViewCell
         
         let photo = photos[indexPath.row]
+        cell.photo = photo
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let imageViewSpace: CGFloat = (view.frame.width - (2 * SpacingConstants.outerHorizontalPadding))
+        let textLabelSpace: CGFloat = SpacingConstants.oneLineElementHeight
+        let colorPaletteSpacing = SpacingConstants.twoLineElementHeight
+        let outerVerticalSpacing: CGFloat = (2 * SpacingConstants.outerVerticalPadding)
+        let innerVerticalSpacing: CGFloat = (2 * SpacingConstants.verticalObjectBuffer)
+        
+        return imageViewSpace + textLabelSpace + colorPaletteSpacing + outerVerticalSpacing + innerVerticalSpacing
     }
 }
