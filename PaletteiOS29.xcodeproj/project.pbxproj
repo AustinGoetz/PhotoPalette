@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4F9C86235F5D8800B69A2B /* PaletteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */; };
 		582214C8235F4FF8009A4EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582214C7235F4FF8009A4EF5 /* AppDelegate.swift */; };
 		582214CA235F4FF8009A4EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582214C9235F4FF8009A4EF5 /* SceneDelegate.swift */; };
 		582214D1235F4FFC009A4EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582214D0235F4FFC009A4EF5 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteListViewController.swift; sourceTree = "<group>"; };
 		582214C4235F4FF8009A4EF5 /* PaletteiOS29.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaletteiOS29.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582214C7235F4FF8009A4EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582214C9235F4FF8009A4EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		582214EC235F51D6009A4EF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				582214EB235F51BD009A4EF5 /* UIColorExtension.swift in Sources */,
 				582214E8235F517C009A4EF5 /* ImaggaService.swift in Sources */,
 				582214DE235F50CE009A4EF5 /* UnsplashService.swift in Sources */,
+				2A4F9C86235F5D8800B69A2B /* PaletteListViewController.swift in Sources */,
 				582214E0235F50ED009A4EF5 /* UnsplashRoute.swift in Sources */,
 				582214E5235F5128009A4EF5 /* ImaggaColor.swift in Sources */,
 			);
