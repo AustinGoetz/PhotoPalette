@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A4F9C86235F5D8800B69A2B /* PaletteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */; };
 		2A4F9C88235F636200B69A2B /* PaletteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F9C87235F636200B69A2B /* PaletteTableViewCell.swift */; };
+		2A4F9C8B235F646800B69A2B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F9C8A235F646800B69A2B /* UIViewExtension.swift */; };
 		582214C8235F4FF8009A4EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582214C7235F4FF8009A4EF5 /* AppDelegate.swift */; };
 		582214CA235F4FF8009A4EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582214C9235F4FF8009A4EF5 /* SceneDelegate.swift */; };
 		582214D1235F4FFC009A4EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582214D0235F4FFC009A4EF5 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		2A4F9C85235F5D8800B69A2B /* PaletteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteListViewController.swift; sourceTree = "<group>"; };
 		2A4F9C87235F636200B69A2B /* PaletteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteTableViewCell.swift; sourceTree = "<group>"; };
+		2A4F9C8A235F646800B69A2B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		582214C4235F4FF8009A4EF5 /* PaletteiOS29.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaletteiOS29.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582214C7235F4FF8009A4EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582214C9235F4FF8009A4EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				582214EA235F51BD009A4EF5 /* UIColorExtension.swift */,
+				2A4F9C8A235F646800B69A2B /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				582214C8235F4FF8009A4EF5 /* AppDelegate.swift in Sources */,
 				582214E3235F5113009A4EF5 /* UnsplashPhoto.swift in Sources */,
+				2A4F9C8B235F646800B69A2B /* UIViewExtension.swift in Sources */,
 				582214CA235F4FF8009A4EF5 /* SceneDelegate.swift in Sources */,
 				582214EB235F51BD009A4EF5 /* UIColorExtension.swift in Sources */,
 				582214E8235F517C009A4EF5 /* ImaggaService.swift in Sources */,
