@@ -10,15 +10,36 @@ import UIKit
 
 class PaletteTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var photo: UnsplashPhoto? {
+        didSet {
+            // Update Views
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
     }
-
+    
+    // MARK: - Declare SubViews (Step One)
+    
+    lazy var paletteImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = (contentView.frame.height/10)
+        imageView.contentMode = .scaleAspectFill
+        
+        return imageView
+    }()
+    
+    lazy var paletteTitleLabel: UILabel = {
+        let label = UILabel()
+        
+        return label
+    }()
+    
+    lazy var colorPaletteView: ColorPaletteView = {
+       let paletteView = ColorPaletteView()
+        
+        return paletteView
+    }()
 }

@@ -20,7 +20,7 @@ class PaletteListViewController: UIViewController {
     }
     
     var buttons: [UIButton] {
-        return[featuredButton, doubleRainbowButton, randomButton]
+        return [featuredButton, doubleRainbowButton, randomButton]
     }
     
     var photos: [UnsplashPhoto] = []
@@ -145,14 +145,18 @@ class PaletteListViewController: UIViewController {
     
 }
 
-
+// MARK: - TableView Conformance (Delegate & DataSource)
 extension PaletteListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return photos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "paletteCell", for: indexPath) as! PaletteTableViewCell
+        
+        let photo = photos[indexPath.row]
+        
+        return cell
     }
 }
