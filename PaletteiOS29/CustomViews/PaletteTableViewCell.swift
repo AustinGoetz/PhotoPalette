@@ -48,7 +48,7 @@ class PaletteTableViewCell: UITableViewCell {
     // MARK: - Add SubViews to Cell (Step Two)
     
     func addAllSubviews() {
-        self.addSubview(paletteImageView)
+        self.addSubview(paletteTitleLabel)
         self.addSubview(paletteImageView)
         self.addSubview(colorPaletteView)
     }
